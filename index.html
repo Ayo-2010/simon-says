@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simon Says</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="game">
+  <header>
+    <h1>Simon Says</h1>
+    <p id="status">Press start and watch the pattern.</p>
+  </header>
+
+  <div class="stats">
+    <span>Round <strong id="round">0</strong></span>
+    <span>Best <strong id="best">0</strong></span>
+  </div>
+
+  <div class="board" id="board">
+    <button class="pad green" data-pad="0" type="button" aria-label="Green pad"></button>
+    <button class="pad red" data-pad="1" type="button" aria-label="Red pad"></button>
+    <button class="pad yellow" data-pad="2" type="button" aria-label="Yellow pad"></button>
+    <button class="pad blue" data-pad="3" type="button" aria-label="Blue pad"></button>
+    <div class="center"><span>SIMON</span></div>
+  </div>
+
+  <button class="start" id="startBtn" type="button">Start game</button>
+  <p class="hint">Repeat the sequence. One wrong pad ends the run.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
