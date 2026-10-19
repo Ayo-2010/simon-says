@@ -9,6 +9,7 @@ A memory game with four colour pads and a growing sequence.
 - Round counter and a best score saved in local storage
 - Start or restart at any time
 - Wrong pad ends the run and reveals the round reached
+- A How to play popup explains the rules
 
 ## Running it
 

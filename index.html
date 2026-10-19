@@ -30,8 +30,25 @@
   </div>
 
   <button class="start" id="startBtn" type="button">Start game</button>
+  <button class="help-btn wide" id="helpBtn" type="button">How to play</button>
   <p class="hint">Repeat the sequence. One wrong pad ends the run.</p>
 </main>
+
+<div class="help-modal" id="helpModal" hidden>
+  <div class="help-backdrop" data-close></div>
+  <div class="help-dialog" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <button class="help-close" id="helpClose" type="button" aria-label="Close">×</button>
+    <h2 class="help-title" id="helpTitle">How to play</h2>
+    <p class="help-lede">A memory game. Watch the pads light up in order, then repeat the sequence. It grows by one step every round.</p>
+    <ol class="help-steps">
+      <li>Press Start game.</li>
+      <li>Watch and listen as the four pads flash in sequence.</li>
+      <li>When it is your turn, click the pads in the same order.</li>
+      <li>Each round you complete adds one more step to the pattern.</li>
+      <li>One wrong pad ends the run. Your best round is saved.</li>
+    </ol>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
